@@ -163,9 +163,9 @@ class TrajLogger(object):
                       "incumbent": conf
                       }
 
-        with open(self.aclib_traj_fn, "a") as fp:
-            json.dump(traj_entry, fp)
-            fp.write("\n")
+        #with open(self.aclib_traj_fn, "a") as fp:
+        #json.dump(traj_entry, fp)
+        #fp.write("\n")
 
     @staticmethod
     def read_traj_aclib_format(fn: str, cs: ConfigurationSpace):
